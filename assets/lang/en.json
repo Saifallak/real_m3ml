@@ -1,0 +1,80 @@
+{
+  "AppNameShort": "B Blood",
+  "AppNameLong": "B Blood (Donating Blood App)",
+  "AppSlogan": "Save people's life with your blood",
+  "AppVersion": "0.0.1 Beta",
+
+  "AccountType.Donator": "Donator",
+  "AccountType.Patient": "Patient",
+
+  "Gender.Male":"Male",
+  "Gender.Female":"Female",
+
+  "Social.Single":"Single",
+  "Social.Married":"Married",
+  "Social.Widowed":"Widowed",
+
+  "Splash.Loading": "Loading...",
+  "Splash.BroughtBy": "Brought to you by :",
+
+  "Button.Login": "Login",
+  "Button.SignUp": "Sign Up",
+  "Button.Donator": "Donator",
+  "Button.Patient": "Patient",
+
+  "Tooltip.picImage": "Pick Image",
+
+  "Error.BadUsername": "Please Enter Valid Username",
+  "Error.BadFullName": "Please Enter Valid Full Name",
+  "Error.BadEmail": "Please Enter Valid Email",
+  "Error.BadPassword": "Please Enter Strong Password",
+  "Error.BadPhoneNum": "Please Enter Valid Phone Number",
+  "Error.BadAge": "Please Enter Valid Age",
+  "Error.BadBloodType": "Please Enter Valid BloodType",
+  "Error.BadGender": "Please Enter Valid Gender",
+  "Error.BadSocial": "Please Enter Valid Social Status",
+  "Error.BadHomeAddress": "Please Enter Valid Home Address",
+  "Error.BadNotes": "Please Enter Valid Notes",
+  "Error.PatientType": "Please Enter Valid Patient Type",
+  "Error.NBlood": "Please Enter Valid No. of Blood Needed ",
+
+  "Label.Username" : "Username",
+  "Label.FullName" : "Full Name",
+  "Label.Email" : "E-mail",
+  "Label.Password" : "Password",
+  "Label.PhoneNum" : "Mobile Number",
+  "Label.Age" : "Age",
+  "Label.BloodType" : "Blood Type",
+  "Label.Gender" : "Gender",
+  "Label.Social" : "Social Status",
+  "Label.HomeAddress" : "Home Address",
+  "Label.Dentist" : "Gone to Dentist or done any medical operations in Last 6 months?",
+  "Label.Diseases" : "Any chronic diseases?",
+  "Label.Notes" : "Notes",
+  "Label.PatientType" : "Patient Type",
+  "Label.NBlood" : "No. of Blood Needed",
+
+  "Hint.Username": "Ex: JohnSmith",
+  "Hint.FullName": "Ex: John Smith",
+  "Hint.Email": "Ex: user@TinyProgrammer.ga",
+  "Hint.Password": "Don't Use Easy passwords like 1234",
+  "Hint.PhoneNum" : "Ex : 01234567890",
+  "Hint.Age" : "Ex : 21",
+  "Hint.Gender" : "Ex : Male.",
+  "Hint.Social" : "Ex : Single.",
+  "Hint.HomeAddress" : "Ex : Cairo Egypt.",
+  "Hint.Notes" : "Any other notes you want us to be aware with",
+  "Hint.PatientType" : "Ex: Severe shortage of blood",
+  "Hint.NBlood" : "Ex: 3",
+
+  "Auth.SignUpAs": "Sign-up as :",
+  "Auth.alreadyLogin" : "Already have an account, Login: ",
+  "Auth.orLoginWith" : "Or Login With :",
+
+  "Register.appTitle" : "B Blood Register",
+  "Register.as" : "Register as ",
+
+  "CYP.title" : "Complete Your Profile",
+  "CYP.FillData" : "Please fill this information to Complete Your Profile:",
+  "CYP.AddProfilePic" : "Add a Profile pic"
+}
