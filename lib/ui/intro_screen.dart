@@ -121,7 +121,7 @@ class _IntroSlideShowState extends State<IntroSlideShow> {
       slides: this.slides,
 
       // Skip button
-      renderSkipBtn: this.renderSkipBtn(),
+//      renderSkipBtn: this.renderSkipBtn(),
       onSkipPress: this.onSkipPress,
       colorSkipBtn: 0x33000000,
       highlightColorSkipBtn: 0xff000000,

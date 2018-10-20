@@ -13,15 +13,15 @@ class _AuthScreenState extends State<AuthScreen> {
       tag: 'hero',
       child: CircleAvatar(
         backgroundColor: Colors.transparent,
-        radius: 48.0,
-        child: Image.asset('assets/logo.png'),
+        radius: 108.0,
+        child: Image.asset('assets/images/logo.png'),
       ),
     );
 
     final email = TextFormField(
       keyboardType: TextInputType.emailAddress,
       autofocus: false,
-      initialValue: 'alucard@gmail.com',
+      initialValue: 'ZinyProgrammers@gmail.com',
       decoration: InputDecoration(
         hintText: 'Email',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),

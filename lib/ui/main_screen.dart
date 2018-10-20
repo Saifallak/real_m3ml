@@ -10,21 +10,19 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: <Widget>[
-          CardModel(),
-          CardModel(),
-          CardModel(),
-          CardModel(),
-          CardModel(),
-          CardModel(),
-          CardModel(),
-          CardModel(),
-          CardModel(),
-          CardModel(),
-          CardModel(),
-          CardModel(),
-        ],
+      appBar: AppBar(backgroundColor: Colors.lightBlueAccent,),
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            CardModel(),
+            CardModel(),
+            CardModel(),
+            CardModel(),
+            CardModel(),
+            CardModel(),
+            CardModel(),
+          ],
+        ),
       ),
     );
   }

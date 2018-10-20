@@ -109,90 +109,78 @@ class _CardModelState extends State<CardModel> {
 //  }
 
   Widget getProfPic() {
-      return Image.asset("assets/images/BloodLogo.png");
+    return Image.asset("assets/images/person.png");
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Container(
+    return Center(
+      child: Container(
 //        width: MediaQuery.of(context).size.width * 0.90,
 //        height: MediaQuery.of(context).size.height * 0.50,
-          decoration: BoxDecoration(
-            border: Border.all(color: Colors.redAccent, width: 3.0),
-            borderRadius: BorderRadius.circular(24.0),
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Column(
-                //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  Container(
-                      width: MediaQuery.of(context).size.width * 0.20,
-                      height: MediaQuery.of(context).size.height * 0.20,
-                      child: getProfPic()),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      "Name: " + "Hassan Hamdy",
-                      style: TextStyle(
-                        fontSize: 18.0,
-                        fontWeight: FontWeight.bold,
-                      ),
+        decoration: BoxDecoration(
+          border: Border.all(color: Colors.redAccent, width: 3.0),
+          borderRadius: BorderRadius.circular(24.0),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            Column(
+              //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                Container(
+                    width: MediaQuery.of(context).size.width * 0.20,
+                    height: MediaQuery.of(context).size.height * 0.20,
+                    child: getProfPic()),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    "Name: " + "Hassan Hamdy",
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      " Age: " + "12",
-                      style: TextStyle(
-                        fontSize: 18.0,
-                        fontWeight: FontWeight.bold,
-                      ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    " Age: " + "12",
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
-                ],
-              ),
-              Column(
-                //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  Container(
-                      width: MediaQuery.of(context).size.width * 0.20,
-                      height: MediaQuery.of(context).size.height * 0.20,
-                      child: Text("Client Type: Student")),
-                  Row(
-                    //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      Container(
-                          width: MediaQuery.of(context).size.width * 0.20,
-                          height: MediaQuery.of(context).size.height * 0.20,
-                          child: Image.asset("assets/images/call_icon.png")),
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
-                        child: Container(
-                            width: MediaQuery.of(context).size.width * 0.20,
-                            height: MediaQuery.of(context).size.height * 0.20,
-                            child: Image.asset("assets/images/chat_icon.png")),
-                      ),
-                    ],
-                  ),
-                  RaisedButton(
-                    onPressed: () {
-                      _authClient.signOut();
-                      Navigator.of(context).pushReplacementNamed("/auth");
-                    },
-                    child: Text(
-                      "SignOut",
-                      style: TextStyle(fontSize: 26.0),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    "Client Type: Student",
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
                     ),
-                    color: Theme.of(context).accentColor,
                   ),
-                ],
-              ),
-            ],
-          ),
+                ),
+              ],
+            ),
+            Column(
+              //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                RaisedButton(
+                  onPressed: () {
+//                    _authClient.signOut();
+//                    Navigator.of(context).pushReplacementNamed("/auth");
+                  },
+                  child: Text(
+                    "Edit Acc",
+                    style: TextStyle(fontSize: 26.0),
+                  ),
+                  color: Theme.of(context).accentColor,
+                ),
+              ],
+            ),
+          ],
         ),
       ),
     );
