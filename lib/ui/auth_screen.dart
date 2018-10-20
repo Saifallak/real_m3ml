@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:m3ml/helpers/helpers.dart';
+import 'package:m3ml/model/user_model.dart';
+import 'package:m3ml/util/database_client.dart';
 
 class AuthScreen extends StatefulWidget {
   @override
@@ -9,6 +11,8 @@ class AuthScreen extends StatefulWidget {
 class _AuthScreenState extends State<AuthScreen> {
   String _email;
   String _password;
+
+  DatabaseClient _databaseClient = DatabaseClient();
 
   @override
   Widget build(BuildContext context) {
