@@ -18,4 +18,33 @@ class DatabaseClient {
     });
     return _snappedUsers;
   }
+
+  Future<Null> updateData(UserModel user) async {
+    DatabaseReference _dataref =
+        _databaseClient.reference().child("clients/${user.key}");
+    await _dataref.update(user.toJson());
+  }
+
+  Future<Null> addData(UserModel user) async {
+    if (await isReg(user.email) == true) {
+      return throw Exception("user is already reg.");
+    }
+    DatabaseReference _dataref = _databaseClient
+        .reference()
+        .child("clients/${user.email.replaceAll(".", "_")}");
+    await _dataref.update(user.toJson());
+  }
+
+  Future<Null> removeData(UserModel user) async {
+    DatabaseReference _dataref =
+        _databaseClient.reference().child("clients/${user.key}");
+    await _dataref.remove();
+  }
+
+  Future<bool> isReg(String email) async {
+    DatabaseReference _dataref =
+        _databaseClient.reference().child("clients/$email");
+    var x = await _dataref.once();
+    return x.value == null ? false : true;
+  }
 }

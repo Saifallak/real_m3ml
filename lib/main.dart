@@ -6,6 +6,8 @@ import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:m3ml/helpers/helpers.dart';
 import 'package:m3ml/helpers/localization_helper.dart';
 import 'package:m3ml/ui/auth_screen.dart';
+import 'package:m3ml/ui/intro_screen.dart';
+import 'package:m3ml/ui/main_screen.dart';
 
 void main() => runApp(new MyApp());
 
@@ -13,13 +15,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: AuthScreen(),
+      home: IntroSlideShow(),
       title: "M3ml CRM",
       theme: defaultTargetPlatform == TargetPlatform.iOS
           ? Themes.kIOSTheme
           : Themes.kDefaultTheme,
       routes: <String, WidgetBuilder>{
-//        '/main': (BuildContext context) => MainScreen(), // Main Screen Route
+        '/main': (BuildContext context) => MainScreen(), // Main Screen Route
         '/auth': (BuildContext context) => AuthScreen(), // Auth Screen Route
       },
       navigatorObservers: [
